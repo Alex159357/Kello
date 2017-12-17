@@ -1,0 +1,82 @@
+.btn{
+    position: relative;
+    background: #4CAF50;
+    padding: 16px 32px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn i{
+    display: inline-block;
+    vertical-align: middle;
+}
+.btn:before{
+    transition: 500ms;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: rgba(0,0,0, .1);
+}
+.btn:after{
+    transition: 500ms;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: rgba(0,0,0, .1);
+}
+.btn:hover:before, .btn:hover:after{
+    height: 50%;
+}
+input, textarea{
+    display: block;
+    padding: 8px 16px;
+    border-radius: 16px;
+    outline: none;
+    border: 1px solid #4CAF50;
+    transition: 500ms;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #c0c0c0;
+    width: 100%;
+}
+input:focus, textarea:focus{
+    transition: 500ms;
+    transform: scale(1.2);
+    background: #fff;
+    border: 3px solid #4CAF50;
+}
+video {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    background: url('../res/img/person-723555_1920.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.noMargin{
+    margin: 0!important;
+}
+table{
+    width: 100%;
+    text-align: left;
+}
+table th{
+    border-bottom: 1px solid #fff;
+}
+table td{
+    font-weight: 100;
+}
+table td, table th{
+    padding: 8px;
+}

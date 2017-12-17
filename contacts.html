@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="node_modules/flexboxgrid/dist/flexboxgrid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/components.css">
+
+
+
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="/">
+        <img src="./res/img/web-page-home.png" width="20" alt="">
+        Главная</a>
+    <a href="/">
+        <img src="./res/img/web-page-home.png" width="20" alt="">
+        Каталог</a>
+    <a href="about.html">
+        <img src="./res/img/web-page-home.png" width="20" alt="">
+        О нас</a>
+    <a href="/"  class="active">
+        <img src="./res/img/phone-call.png" width="20" alt="">
+        Контакты</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="chuse">
+    <span onclick="feedBack();" class="swich"><i class="material-icons">keyboard_arrow_left</i></span>
+    <form class="row center-xs">
+        <h2 class="col-xs-12">
+            Обратная связь
+        </h2>
+        <div class="col-xs-12 col-md-9 feedsItem">
+            <input type="text" placeholder="Ф И О">
+        </div>
+        <div class="col-xs-12 col-md-9 feedsItem">
+            <input type="email" placeholder="e-mail">
+        </div>
+        <div class="col-xs-12 col-md-9 feedsItem">
+            <input type="tel" placeholder="Номер телефона">
+        </div>
+        <div class="col-xs-12 col-md-9 feedsItem">
+            <textarea placeholder="Текст сообщения" rows="10"></textarea>
+        </div>
+        <div class="col-xs-12 feedsItem">
+            <button class="btn sellect" type="submit">Отправить</button>
+        </div>
+    </form>
+</div>
+
+
+<main role="main" class="main">
+    <section class="contactPageView">
+        <h3 class="sectionHeader">Контакты</h3>
+        <div class="container" style="background: #fff; padding: 16px; box-shadow: 3px 3px 10px rgba(0,0,0,.1)">
+            <h4 class="subSectionHeader">Небольшой текст для сео </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem dolor dolore eligendi esse eveniet excepturi fuga iste laboriosam maiores nihil odit porro quaerat, qui quidem, suscipit unde vel voluptatum?</p>
+
+            <div class="row" style="padding-top: 80px;">
+                <div class="col-xs-12 col-md-8 map">
+                    <iframe
+                            style="width: 100%; height: 450px;"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1991.3618119934422!2d30.327844316101896!3d60.05880498192001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469634c4d7ef11c3%3A0x76d66ad5574627f9!2z0YPQuy4g0KjQvtGB0YLQsNC60L7QstC40YfQsCwgOCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGW0Y8sIDE5NDM1OA!5e0!3m2!1suk!2sua!4v1512602579310" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col-xs-12 col-md-4 form">
+                    <div class="contactView">
+                        <div class="contactItem" >
+                            <img src="./res/img/telephone.png" width="40" height="40" alt="">
+                            <span >+7 812 932 73 33</span>
+                        </div>
+                        <div class="contactItem" >
+                            <img src="./res/img/mail-black-envelope-symbol.png" width="40" height="40" alt="">
+                            <span >9327333@domkelo.ru</span>
+                        </div>
+                        <div class="contactItem" >
+                            <img src="./res/img/placeholder.png" width="40" height="40" alt="">
+                            <i>Россия, город Санкт-Петербург, ул. Шостаковича, дом 8, корпус 2.</i>
+                        </div>
+                        <button onclick="feedBack();" class="provaryButton btn" style="width: 100%;">Обратная связь</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="lineView">
+            <span>DOMKELO</span>
+        </div>
+        <div class="contacts">
+            <h4><i class="material-icons">&#xE8C5;</i> <span>+7 812 932 73 33</span></h4>
+            <h4><i class="material-icons">&#xE0BE;</i> <span>9327333@domkelo.ru</span></h4>
+            <br>
+            <h4><i class="material-icons">&#xE55B;</i> <span>Россия, город Санкт-Петербург, ул. Шостаковича, дом 8, корпус 2</span></h4>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/jquery-parallax.js/parallax.min.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/app.js"></script>
+</body>
